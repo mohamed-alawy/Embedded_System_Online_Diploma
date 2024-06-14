@@ -15,13 +15,16 @@ void prime(int a,int b)
 	{
 		arr[i]=a+i;
 		isPrime = 1;
-		for (k = 2; k <= (arr[i]/2); k++) {
-			if (arr[i] % k == 0) {
+		for (k = 2; k <= (arr[i]/2); k++)
+		{
+			if (arr[i] % k == 0)
+			{
 				isPrime = 0;
 				break;
 			}
 		}
-		if (isPrime) {
+		if (isPrime)
+		{
 			p[j] = arr[i];
 			j++;
 		}
